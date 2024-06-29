@@ -1,0 +1,75 @@
+section.whatWeDo {
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.whatWeDo article p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+section.whatWeDo .gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 100px 0;
+}
+
+section.whatWeDo .gallery > .img-container > img {
+  width: 388px;
+  height: 262px;
+}
+
+.whatWeDo .gallery .img-container {
+  width: 388px;
+  height: 262px;
+
+  cursor: pointer;
+  position: relative;
+  transition: all 10s;
+}
+
+.whatWeDo .gallery .img-container .hoverEff {
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.whatWeDo .gallery .img-container .hoverEff h6 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  margin-top: 10px;
+}
+
+.whatWeDo .gallery .img-container:hover .hoverEff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 388px;
+  height: 262px;
+
+  background: linear-gradient(0deg, rgba(226, 204, 123, 0.85) 0%, rgba(219, 116, 116, 0.85) 100%);
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0 0 #95e1d3;
+}
